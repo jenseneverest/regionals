@@ -50,7 +50,13 @@ case "$choice" in
  1 ) ./virgin_alias_update.sh ;;
  2 ) ./folder/another ;;
  3 ) ../progs/onemore ;;
- 4 ) wget $LONDON && unzip london.zip && sleep 5 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && echo "completed" && sleep 4 ;;
+ 9 ) wget $LONDON && unzip london.zip && sleep 5 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
+echo "                ***********************************************"
+echo "                *                                             *"
+echo "                *       YOUR ITV REGION HAS BEEN SETUP        *"
+echo "                *                                             *"
+echo "                ***********************************************"
+sleep 4 ;;
  20 ) clear; exit 1 ;;
 esac
 
