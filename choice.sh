@@ -8,7 +8,7 @@ echo "        *           THIS ADDS VIRGIN EPG             *"
 echo "        *                                            *"
 echo "        **********************************************"
 echo ""
-sleep 5
+sleep 4
 echo ""
 echo "        **********************************************"
 echo "        *                                            *"
@@ -20,23 +20,31 @@ if [ -d /usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG ]
 then
 clear
 echo ""
-echo "        *******************************************************"
-echo "        *                                                     *"
-echo "        *       Great you already have crossepg installed     *"
-echo "        *                                                     *"
-echo "        *******************************************************"
+echo "             *******************************************************"
+echo "             *                                                     *"
+echo "             *       Great you already have crossepg installed     *"
+echo "             *                                                     *"
+echo "             *******************************************************"
 sleep 4
 else 
 echo ""
 echo "        *********************************************************************"
 echo "        *                You do NOT have crossepg installed                 *"
-echo "        *    Please install crossepg plugin then run this alias mod again   *"
+echo "        *               Please install crossepg plugin first                *"
+echo "        *                  then run this alias mod again                    *"
 echo "        *                your box will now reboot - goodbye                 *"
 echo "        *********************************************************************"
 sleep 5
 reboot
 fi
-
+echo ""
+echo ""
+echo "        *********************************************************************"
+echo "        *           The required files are now being installed              *"
+echo "        *       Then you will get an option to choose your ITV region       *"
+echo "        *  This will allow you to update the alias file online as required  *"
+echo "        *********************************************************************"
+sleep 5
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
 LONDON='https://github.com/jenseneverest/regionals/raw/master/london.zip'
@@ -84,7 +92,7 @@ echo "           *  FUTURE UPDATES TO THE ALIAS FILE VIA PLUGIN NOW SORTED  *"
 echo "           ************************************************************"
 sleep 4 ;;
  20 ) clear; exit 1 ;;
- 22 ) reboot ;;
+ 22 ) init 4 && reboot ;;
 esac
 
 done
