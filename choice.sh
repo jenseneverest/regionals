@@ -9,7 +9,6 @@ echo "        *                                            *"
 echo "        **********************************************"
 echo ""
 sleep 5
-clear
 echo ""
 echo "        **********************************************"
 echo "        *                                            *"
@@ -21,12 +20,20 @@ if [ -d /usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG ]
 then
 clear
 echo ""
-echo "        **********************************************"
-echo "        *                                            *"
-echo "        * Great you already have crossepg installed  *"
-echo "        *                                            *"
-echo "        **********************************************"
-sleep 3
+echo "        *******************************************************"
+echo "        *                                                     *"
+echo "        *       Great you already have crossepg installed     *"
+echo "        *                                                     *"
+echo "        *******************************************************"
+else 
+echo ""
+echo "        *********************************************************************"
+echo "        *                You do NOT have crossepg installed                 *"
+echo "        *    Please install crossepg plugin then run this alias mod again   *"
+echo "        *                your box will now reboot - goodbye                 *"
+echo "        *********************************************************************"
+sleep 5
+reboot
 fi
 
 VIRGIN='/usr/crossepg/scripts/virgin'
