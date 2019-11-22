@@ -25,6 +25,7 @@ echo "        *                                                     *"
 echo "        *       Great you already have crossepg installed     *"
 echo "        *                                                     *"
 echo "        *******************************************************"
+sleep 4
 else 
 echo ""
 echo "        *********************************************************************"
@@ -83,6 +84,7 @@ echo "           *  FUTURE UPDATES TO THE ALIAS FILE VIA PLUGIN NOW SORTED  *"
 echo "           ************************************************************"
 sleep 4 ;;
  20 ) clear; exit 1 ;;
+ 22 ) reboot ;;
 esac
 
 done
