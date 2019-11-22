@@ -34,17 +34,18 @@ echo "        *               Please install crossepg plugin first              
 echo "        *                  then run this alias mod again                    *"
 echo "        *                your box will now reboot - goodbye                 *"
 echo "        *********************************************************************"
-sleep 5
+sleep 9
 reboot
 fi
+opkg install https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 echo ""
 echo ""
 echo "        *********************************************************************"
-echo "        *           The required files are now being installed              *"
-echo "        *       Then you will get an option to choose your ITV region       *"
+echo "        *            The required files have now installed                  *"
+echo "        *        You will now get an option to choose your ITV region       *"
 echo "        *  This will allow you to update the alias file online as required  *"
 echo "        *********************************************************************"
-sleep 5
+sleep 9
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
 LONDON='https://github.com/jenseneverest/regionals/raw/master/london.zip'
@@ -90,7 +91,8 @@ echo "           ************************************************************"
 echo "           *          YOUR ITV REGION HAS BEEN SET TO: LONDON         *"
 echo "           *  FUTURE UPDATES TO THE ALIAS FILE VIA PLUGIN NOW SORTED  *"
 echo "           ************************************************************"
-sleep 4 ;;
+sleep 4
+reboot ;;
  20 ) clear; exit 1 ;;
  22 ) init 4 && reboot ;;
 esac
