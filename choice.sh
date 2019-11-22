@@ -5,18 +5,29 @@ echo "        **********************************************"
 echo "        *                                            *"
 echo "        *     WELCOME TO THE CROSSEPG ALIAS MOD      *"
 echo "        *           THIS ADDS VIRGIN EPG             *"
-echo "        *       Proceding to installation now......  *"
 echo "        *                                            *"
 echo "        **********************************************"
 echo ""
 sleep 5
 clear
+echo ""
 echo "        **********************************************"
 echo "        *                                            *"
 echo "        *     Checking for crossepg plugin......     *"
 echo "        *                                            *"
 echo "        **********************************************"
 sleep 3
+if [ -d /usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG ]
+then
+clear
+echo ""
+echo "        **********************************************"
+echo "        *                                            *"
+echo "        * Great you already have crossepg installed  *"
+echo "        *                                            *"
+echo "        **********************************************"
+sleep 3
+fi
 
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
