@@ -29,13 +29,13 @@ sleep 4
 else 
 echo ""
 echo "        *********************************************************************"
+echo "        *                                                                   *"
 echo "        *                You do NOT have crossepg installed                 *"
-echo "        *               Please install crossepg plugin first                *"
-echo "        *                  then run this alias mod again                    *"
-echo "        *                your box will now reboot - goodbye                 *"
+echo "        *                   Lets install it now for you                     *"
+echo "        *                                                                   *"
 echo "        *********************************************************************"
-sleep 9
-reboot
+sleep 4
+opkg install enigma2-plugin-systemplugins-crossepg
 fi
 opkg install https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 echo ""
