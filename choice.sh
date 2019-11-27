@@ -6,13 +6,18 @@ echo "        *                                               *"
 echo "        *      WELCOME TO THE CROSSEPG ALIAS MOD        *"
 echo "        *  THIS CONVERTS SAT EPG DATA FOR USE ON CABLE  *"
 echo "        *                                               *"
+echo "        *          By jenseneverest & pauldb            *"
+echo "        *            @linuxsat-support.com              *"
+echo "        *                                               *"
 echo "        *************************************************"
 echo ""
-sleep 4
+sleep 5
 echo ""
 echo "          **********************************************"
 echo "          *                                            *"
+echo "          *                                            *"
 echo "          *     Checking for crossepg plugin......     *"
+echo "          *                                            *"
 echo "          *                                            *"
 echo "          **********************************************"
 sleep 3
@@ -21,8 +26,12 @@ then
 clear
 echo ""
 echo "             *******************************************************"
+echo "             *                                                     *"
+echo "             *                                                     *"
 echo "             *      Great you already have crossepg installed      *"
 echo "             *     Moving on to installing the virgin alias mod    *"
+echo "             *                                                     *"
+echo "             *                                                     *"
 echo "             *******************************************************"
 sleep 4
 else 
@@ -53,9 +62,11 @@ echo ""
 echo ""
 echo "        *********************************************************************"
 echo "        *                                                                   *"
-echo "        *            The required files have now installed                  *"
-echo "        *        You will now get an option to choose your ITV region       *"
-echo "        *    This will allow you to update the alias file with crossepg     *"
+echo "        *          your box has now been put into sleep mode                *"
+echo "        *                                                                   *"
+echo "        *          The required files are now being installed               *"
+echo "        *       You will now get an option to choose your ITV region        *"
+echo "        *    And will allow you to update the alias file with crossepg      *"
 echo "        *                                                                   *"
 echo "        *********************************************************************"
 sleep 9
@@ -96,7 +107,7 @@ echo "                #    9) Westcountry SW                              #"
 echo "                #   10) Westcountry West                            #"
 echo "                #   11) Yorkshire                                   #"
 echo "                #                                                   #"
-echo "                #   19) My Area is not listed - HELP                #"
+echo "                #   19) HELP -/ My Area is not listed               #"
 echo "                #                                                   #"
 echo "                #   22) EXIT & REBOOT BOX                           #"
 echo "                #                                                   #"
@@ -297,15 +308,15 @@ echo "          *                                                               
 echo "          *   ITV regionals are not required for Scotland or N Ireland     *"
 echo "          *     Those regions have there own versions - STV and UTV        *"
 echo "          *              so you have all you need already                  *"
-echo "          *     just update your alias file and you are good to go         *"
+echo "          *   just update your alias with crossepg & your good to go       *"
 echo "          *                                                                *"
-echo "          *     For anything else please make a request on the forum       *"
-echo "          *                                                                *"
+echo "          *    For anything else please make a request on the forum        *"
+echo "          *                   Linuxsat-support.com                         *"
 echo "          *                Your box will reboot shortly                    *"
 echo "          *                                                                *"
 echo "          ******************************************************************"
-sleep 11
-clear; exit 0 ;;
+sleep 12
+init 4 && reboot ;;
 
 
 
