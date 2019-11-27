@@ -117,7 +117,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -135,7 +135,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -152,7 +152,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -168,7 +168,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -184,7 +184,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -201,7 +201,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -218,7 +218,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -234,7 +234,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -250,7 +250,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -267,7 +267,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -283,7 +283,7 @@ echo ""
 echo "        **********************************************************************"
 echo "        *                Your box will reboot in 6 seconds                   *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
-echo "        *    Remeber to setup Crossepg plugin and update your alias file     *"
+echo "        *    Remember to setup Crossepg plugin and update your alias file     *"
 echo "        **********************************************************************"
 sleep 6
 init 4 && reboot ;;
@@ -291,14 +291,14 @@ init 4 && reboot ;;
 
 
  19 ) echo ""
-echo "       *****************************************************************************"
-echo "       *                                                                           *"
-echo "       *       ITV regionals are not required for Scotland or N Ireland            *"
-echo "       *          Those regions have there own versions STV and UTV                *"
-echo "       *                                                                           *"
-echo "       *****************************************************************************"
+echo "       ***********************************************************************"
+echo "       *                                                                     *"
+echo "       *       ITV regionals are not required for Scotland or N Ireland      *"
+echo "       *          Those regions have there own versions STV and UTV          *"
+echo "       *                                                                     *"
+echo "       ***********************************************************************"
 sleep 5
-clear; exit 1 ;;
+clear; exit 0 ;;
 
 
 
@@ -310,7 +310,7 @@ clear; exit 1 ;;
  21 ) cd /usr/crossepg/scripts/virgin && ./update.py
  echo " updated alias file "
  sleep 5
- clear; exit 1 ;;
+ clear; exit 0 ;;
  
  22 ) init 4 && reboot ;;
 esac
