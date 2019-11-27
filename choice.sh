@@ -33,7 +33,7 @@ echo "             *     Moving on to installing the virgin alias mod    *"
 echo "             *                                                     *"
 echo "             *                                                     *"
 echo "             *******************************************************"
-sleep 4
+sleep 5
 else 
 echo ""
 echo "        *********************************************************************"
@@ -43,12 +43,12 @@ echo "        *                   Lets install it now for you                   
 echo "        *                                                                   *"
 echo "        *********************************************************************"
 sleep 5
-opkg install enigma2-plugin-systemplugins-crossepg
+opkg install --force-reinstall enigma2-plugin-systemplugins-crossepg
 clear
 echo ""
 echo "        *********************************************************************"
 echo "        *                                                                   *"
-echo "        *              Crossepg Plugin has now been installed               *"
+echo "        *            Crossepg Plugin should now been installed              *"
 echo "        *   You will need to configure Crossepg - See forum for details     *"
 echo "        *            Moving on to installing the alias virgin mod           *"
 echo "        *                                                                   *"
@@ -69,7 +69,7 @@ echo "        *       You will now get an option to choose your ITV region      
 echo "        *    And will allow you to update the alias file with crossepg      *"
 echo "        *                                                                   *"
 echo "        *********************************************************************"
-sleep 9
+sleep 12
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
 
@@ -127,11 +127,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
 
@@ -145,11 +145,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
 
@@ -162,11 +162,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
  
  4 ) wget $GRANADA && unzip granada.zip && sleep 3 && cd granada && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
@@ -178,11 +178,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
  5 ) wget $MERIDIAN && unzip meridian.zip && sleep 3 && cd meridian && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
@@ -194,11 +194,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
  
  
@@ -211,11 +211,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
 
@@ -228,11 +228,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
  8 ) wget $WALES && unzip wales.zip && sleep 3 && cd wales && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
@@ -244,11 +244,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
  9 ) wget $WESTCOUNTRYSW && unzip westcountrysw.zip && sleep 3 && cd westcountrysw && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
@@ -260,11 +260,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
 
@@ -277,11 +277,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
  11 ) wget $YORKSHIRE && unzip yorkshire.zip && sleep 3 && cd yorkshire && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
@@ -293,11 +293,11 @@ echo "            ************************************************************"
 sleep 4
 echo ""
 echo "        **********************************************************************"
-echo "        *                Your box will reboot in 6 seconds                   *"
+echo "        *                Your box will reboot in 10 seconds                  *"
 echo "        *        Please see linuxsat-support.com for help & questions        *"
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
-sleep 6
+sleep 10
 init 4 && reboot ;;
 
 
