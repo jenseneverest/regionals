@@ -58,18 +58,19 @@ fi
 
 #opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 
+mkdir /usr/crossepg/scripts/virgin
 wget https://github.com/jenseneverest/regionals/raw/master/base.zip
 unzip base.zip
-mkdir /usr/crossepg/scripts/virgin
-cp -f base/delete_script.conf /$PROVIDER
-cp -f base/update_script.conf /$PROVIDER
-cp -f base/virgin_script.conf /$PROVIDER
-cp -f base/alias.conf /$VIRGIN
-cp -f base/alias.py /$VIRGIN
-cp -f base/delete.py /$VIRGIN
-cp -f base/update.py /$VIRGIN
-cp -f base/version.py /$NUMBER
-cp -f base/VERSION /$NUMBER
+cp base/delete_script.conf /$PROVIDER
+cp base/update_script.conf /$PROVIDER
+cp base/virgin_script.conf /$PROVIDER
+cp base/alias.conf /$VIRGIN
+cp base/alias.py /$VIRGIN
+cp base/delete.py /$VIRGIN
+cp base/update.py /$VIRGIN
+cp base/version.py /$NUMBER
+cp base/VERSION /$NUMBER
+sleep 2
 chmod 755 /usr/crossepg/scripts/virgin/alias.conf
 chmod 755 /usr/crossepg/scripts/virgin/alias.py
 chmod 755 /usr/crossepg/scripts/virgin/update.py
