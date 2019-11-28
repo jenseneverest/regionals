@@ -11,7 +11,7 @@ for mp in `get_mounts`; do
     rm -f ${mp}/epg.dat  
     rm -rf ${mp}/crossepg
 done  
-
+init 6
 
 
 

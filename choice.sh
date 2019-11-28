@@ -25,14 +25,14 @@ if [ -d /usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG ]
 then
 clear
 echo ""
-echo "             *******************************************************"
-echo "             *                                                     *"
-echo "             *                                                     *"
-echo "             *      Great you already have crossepg installed      *"
-echo "             *     Moving on to installing the virgin alias mod    *"
-echo "             *                                                     *"
-echo "             *                                                     *"
-echo "             *******************************************************"
+echo "              *******************************************************"
+echo "              *                                                     *"
+echo "              *                                                     *"
+echo "              *      Great you already have crossepg installed      *"
+echo "              *     Moving on to installing the virgin alias mod    *"
+echo "              *                                                     *"
+echo "              *                                                     *"
+echo "              *******************************************************"
 sleep 5
 else 
 echo ""
@@ -55,21 +55,24 @@ echo "        *                                                                 
 echo "        *********************************************************************"
 sleep 8
 fi
-opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
-echo ""
-echo ""
-echo ""
-echo ""
-echo "        *********************************************************************"
-echo "        *                                                                   *"
-echo "        *          your box has now been put into sleep mode                *"
-echo "        *                                                                   *"
-echo "        *          The required files are now being installed               *"
-echo "        *       You will now get an option to choose your ITV region        *"
-echo "        *    And will allow you to update the alias file with crossepg      *"
-echo "        *                                                                   *"
-echo "        *********************************************************************"
-sleep 12
+#opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
+
+wget $BASE && unzip base && sleep 1 && cd base && ./installer.sh 
+
+#echo ""
+#echo ""
+#echo ""
+#echo ""
+#echo "        *********************************************************************"
+#echo "        *                                                                   *"
+#echo "        *          your box has now been put into sleep mode                *"
+#echo "        *                                                                   *"
+#echo "        *          The required files are now being installed               *"
+#echo "        *       You will now get an option to choose your ITV region        *"
+#echo "        *    And will allow you to update the alias file with crossepg      *"
+#echo "        *                                                                   *"
+#echo "        *********************************************************************"
+#sleep 12
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
 
@@ -85,6 +88,7 @@ WESTCOUNTRYSW='https://github.com/jenseneverest/regionals/raw/master/westcountry
 WESTCOUNTRYWEST='https://github.com/jenseneverest/regionals/raw/master/westcountrywest.zip'
 YORKSHIRE='https://github.com/jenseneverest/regionals/raw/master/yorkshire.zip'
 CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
+BASE='https://github.com/jenseneverest/regionals/raw/master/base.zip'
 
 choice=0
 
@@ -217,7 +221,7 @@ echo "        *        Please see linuxsat-support.com for help & questions     
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
 sleep 10
-wget $CLEAN && ./clean.sh && reboot ;;
+./$CLEAN ;;
 
 
  7 ) wget $TYNE && unzip tyne.zip && sleep 3 && cd tyne && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
