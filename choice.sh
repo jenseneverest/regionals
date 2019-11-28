@@ -55,7 +55,7 @@ echo "        *                                                                 
 echo "        *********************************************************************"
 sleep 8
 fi
-opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
+init 4 && opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 echo ""
 echo ""
 echo ""
