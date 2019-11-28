@@ -60,10 +60,39 @@ fi
 
 wget https://github.com/jenseneverest/regionals/raw/master/base.zip
 unzip base.zip
-cd base && chmod 755 installer.sh && ./installer.sh
+cp -f base/delete_script.conf /$PROVIDER
+cp -f base/update_script.conf /$PROVIDER
+cp -f base/virgin_script.conf /$PROVIDER
+cp -f base/alias.conf /$VIRGIN
+cp -f base/alias.py /$VIRGIN
+cp -f base/delete.py /$VIRGIN
+cp -f base/update.py /$VIRGIN
+cp -f base/version.py /$NUMBER
+cp -f base/VERSION /$NUMBER
+chmod 755 /usr/crossepg/scripts/virgin/alias.conf
+chmod 755 /usr/crossepg/scripts/virgin/alias.py
+chmod 755 /usr/crossepg/scripts/virgin/update.py
+clear
+echo ""
+echo ""
+echo ""
+echo ""
+echo "        *********************************************************************"
+echo "        *                                                                   *"
+echo "        *          The required files have now being installed              *"
+echo "        *       You will now get an option to choose your ITV region        *"
+echo "        *    And will allow you to update the alias file with crossepg      *"
+echo "        *                                                                   *"
+echo "        *********************************************************************"
+sleep 10
+
+
 
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
+CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
+BASE='https://github.com/jenseneverest/regionals/raw/master/base.zip'
+NUMBER='/usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG'
 
 ANGLIA='https://github.com/jenseneverest/regionals/raw/master/anglia.zip'
 BORDER='https://github.com/jenseneverest/regionals/raw/master/border.zip'
@@ -76,8 +105,7 @@ WALES='https://github.com/jenseneverest/regionals/raw/master/wales.zip'
 WESTCOUNTRYSW='https://github.com/jenseneverest/regionals/raw/master/westcountrysw.zip'
 WESTCOUNTRYWEST='https://github.com/jenseneverest/regionals/raw/master/westcountrywest.zip'
 YORKSHIRE='https://github.com/jenseneverest/regionals/raw/master/yorkshire.zip'
-CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
-BASE='https://github.com/jenseneverest/regionals/raw/master/base.zip'
+
 
 
 choice=0
