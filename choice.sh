@@ -88,7 +88,8 @@ WESTCOUNTRYSW='https://github.com/jenseneverest/regionals/raw/master/westcountry
 WESTCOUNTRYWEST='https://github.com/jenseneverest/regionals/raw/master/westcountrywest.zip'
 YORKSHIRE='https://github.com/jenseneverest/regionals/raw/master/yorkshire.zip'
 CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
-BASE='https://github.com/jenseneverest/regionals/raw/master/base.zip'
+BASE='https://github.com/jenseneverest/regionals/blob/master/base.zip?raw=true'
+
 
 choice=0
 
