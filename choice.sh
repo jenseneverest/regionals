@@ -55,7 +55,7 @@ echo "        *                                                                 
 echo "        *********************************************************************"
 sleep 8
 fi
-init 4 && opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
+opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 echo ""
 echo ""
 echo ""
@@ -84,6 +84,7 @@ WALES='https://github.com/jenseneverest/regionals/raw/master/wales.zip'
 WESTCOUNTRYSW='https://github.com/jenseneverest/regionals/raw/master/westcountrysw.zip'
 WESTCOUNTRYWEST='https://github.com/jenseneverest/regionals/raw/master/westcountrywest.zip'
 YORKSHIRE='https://github.com/jenseneverest/regionals/raw/master/yorkshire.zip'
+CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
 
 choice=0
 
@@ -216,7 +217,7 @@ echo "        *        Please see linuxsat-support.com for help & questions     
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
 sleep 10
-init 4 && reboot ;;
+wget $CLEAN && ./clean.sh && reboot ;;
 
 
  7 ) wget $TYNE && unzip tyne.zip && sleep 3 && cd tyne && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
