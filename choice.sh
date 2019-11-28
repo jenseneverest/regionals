@@ -58,7 +58,7 @@ fi
 
 #opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 
-wget https://github.com/jenseneverest/regionals/blob/master/base.zip?raw=true && unzip base.zip && sleep 1 && cd base && ./installer.sh 
+wget -0 - https://github.com/jenseneverest/regionals/blob/master/base.zip?raw=true | base.zip && unzip base.zip && sleep 1 && cd base && ./installer.sh 
 
 
 VIRGIN='/usr/crossepg/scripts/virgin'
