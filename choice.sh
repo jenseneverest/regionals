@@ -60,7 +60,7 @@ fi
 
 wget https://github.com/jenseneverest/regionals/raw/master/base.zip
 unzip base.zip
-cd base && ./installer.sh
+cd base && chmod 755 installer.sh && ./installer.sh
 
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
