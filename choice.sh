@@ -60,6 +60,7 @@ fi
 
 wget https://github.com/jenseneverest/regionals/raw/master/base.zip
 unzip base.zip
+mkdir /usr/crossepg/scripts/virgin
 cp -f base/delete_script.conf /$PROVIDER
 cp -f base/update_script.conf /$PROVIDER
 cp -f base/virgin_script.conf /$PROVIDER
