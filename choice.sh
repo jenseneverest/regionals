@@ -56,25 +56,7 @@ echo "        ******************************************************************
 sleep 8
 fi
 
-#opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
-
-mkdir /usr/crossepg/scripts/virgin/
-wget https://github.com/jenseneverest/regionals/raw/master/base.zip
-unzip base.zip
-sleep 2
-cp base/delete_script.conf /$PROVIDER
-cp base/update_script.conf /$PROVIDER
-cp base/virgin_script.conf /$PROVIDER
-cp base/alias.conf /$VIRGIN
-cp base/alias.py /$VIRGIN
-cp base/delete.py /$VIRGIN
-cp base/update.py /$VIRGIN
-cp base/version.py /$NUMBER
-cp base/VERSION /$NUMBER
-sleep 2
-chmod 755 /usr/crossepg/scripts/virgin/alias.conf
-chmod 755 /usr/crossepg/scripts/virgin/alias.py
-chmod 755 /usr/crossepg/scripts/virgin/update.py
+opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
 clear
 echo ""
 echo ""
