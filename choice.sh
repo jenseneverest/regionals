@@ -1,17 +1,24 @@
 #!/bin/sh
 #Jenseneverest Crossepg mod for Virgin EPG data.
+clear
 echo ""
-echo "        *************************************************"
-echo "        *                                               *"
-echo "        *      WELCOME TO THE CROSSEPG ALIAS MOD        *"
-echo "        *  THIS CONVERTS SAT EPG DATA FOR USE ON CABLE  *"
-echo "        *                                               *"
-echo "        *          By jenseneverest & pauldb            *"
-echo "        *            @linuxsat-support.com              *"
-echo "        *                                               *"
-echo "        *************************************************"
+echo "        ***************************************************"
+echo "        *                                                 *"
+echo "        *       WELCOME TO THE CROSSEPG ALIAS MOD         *"
+echo "        *   THIS CONVERTS SAT EPG DATA FOR USE ON CABLE   *"
+echo "        *                                                 *"
+echo "        *           By jenseneverest & pauldb             *"
+echo "        *             @linuxsat-support.com               *"
+echo "        *                                                 *"
+echo "        *                                                 *"
+echo "        *    Your box will now be placed in sleep mode    *"
+echo "        *           to transfer the files over            *"
+echo "        *                                                 *"
+echo "        *                                                 *"
+echo "        ***************************************************"
 echo ""
-sleep 5
+sleep 6
+init 4
 echo ""
 echo "          **********************************************"
 echo "          *                                            *"
