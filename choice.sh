@@ -224,7 +224,7 @@ echo "        *        Please see linuxsat-support.com for help & questions     
 echo "        *    Remember to setup Crossepg plugin and update your alias file    *"
 echo "        **********************************************************************"
 sleep 10
-./$CLEAN ;;
+init 4 && reboot ;;
 
 
  7 ) wget $TYNE && unzip tyne.zip && sleep 3 && cd tyne && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
