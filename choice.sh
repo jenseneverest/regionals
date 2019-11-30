@@ -217,7 +217,7 @@ sleep 10
 init 4 && reboot ;;
  
  
- 6 ) wget $LONDON && unzip london.zip && sleep 3 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && 
+ 6 ) wget $LONDON && unzip london.zip && sleep 3 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER && ./update.py &&
 clear
 echo "            ************************************************************"
 echo "            *          YOUR ITV REGION HAS BEEN SET TO: LONDON         *"
