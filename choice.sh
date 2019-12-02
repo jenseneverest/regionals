@@ -329,7 +329,7 @@ clear
 echo ""
 echo ""
 echo "            ************************************************************"
-echo "            *      YOUR ITV REGION HAS BEEN SET TO: WESTCOUNTRYSW      *"
+echo "            *      YOUR ITV REGION HAS BEEN SET TO: WESTCOUNTRY SW     *"
 echo "            *  FUTURE UPDATES TO THE ALIAS FILE VIA PLUGIN NOW SORTED  *"
 echo "            ************************************************************"
 sleep 4
@@ -353,7 +353,7 @@ clear
 echo ""
 echo ""
 echo "            ************************************************************"
-echo "            *     YOUR ITV REGION HAS BEEN SET TO: WESTCOUNTRYWEST     *"
+echo "            *    YOUR ITV REGION HAS BEEN SET TO: WESTCOUNTRY WEST     *"
 echo "            *  FUTURE UPDATES TO THE ALIAS FILE VIA PLUGIN NOW SORTED  *"
 echo "            ************************************************************"
 sleep 4
@@ -395,7 +395,8 @@ init 4 && reboot ;;
 
 
 
- 19 )wget -q https://github.com/jenseneverest/alias/raw/master/alias.conf -O /usr/crossepg/scripts/virgin/alias.conf
+ 19 )clear
+wget -q https://github.com/jenseneverest/alias/raw/master/alias.conf -O /usr/crossepg/scripts/virgin/alias.conf
 echo ""
 echo ""
 echo "          ******************************************************************"
@@ -412,7 +413,7 @@ echo "          *                                                               
 echo "          *                Your box will reboot shortly                    *"
 echo "          *                                                                *"
 echo "          ******************************************************************"
-sleep 12
+sleep 20
 init 4 && reboot ;;
 
 
