@@ -413,7 +413,7 @@ echo "          *                                                               
 echo "          *                Your box will reboot shortly                    *"
 echo "          *                                                                *"
 echo "          ******************************************************************"
-sleep 20
+sleep 30
 init 4 && reboot ;;
 
 
