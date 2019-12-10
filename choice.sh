@@ -41,7 +41,7 @@ echo "              *                                                     *"
 echo "              *                                                     *"
 echo "              *******************************************************"
 sleep 5
-else 
+else
 echo ""
 echo "        *********************************************************************"
 echo "        *                                                                   *"
@@ -206,7 +206,7 @@ echo "        *                                                                 
 echo "        **********************************************************************"
 sleep 10
 init 4 && reboot ;;
- 
+
  4 ) wget $GRANADA && unzip granada.zip && sleep 3 && cd granada && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
@@ -252,8 +252,8 @@ echo "        *                                                                 
 echo "        **********************************************************************"
 sleep 10
 init 4 && reboot ;;
- 
- 
+
+
  6 ) wget $LONDON && unzip london.zip && sleep 3 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
@@ -419,12 +419,12 @@ init 4 && reboot ;;
 
 
 
- 
- 
- 
+
+
+
  20 ) clear; exit 1 ;;
- 
- 
+
+
  22 ) init 4 && reboot ;;
 esac
 

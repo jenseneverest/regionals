@@ -8,9 +8,9 @@ init 4
 sleep 3
 rm -f /etc/enigma2/epg.dat
 for mp in `get_mounts`; do
-    rm -f ${mp}/epg.dat  
+    rm -f ${mp}/epg.dat
     rm -rf ${mp}/crossepg
-done  
+done
 init 6
 
 
