@@ -11,13 +11,13 @@ echo "        *           By jenseneverest & pauldb             *"
 echo "        *             @linuxsat-support.com               *"
 echo "        *                                                 *"
 echo "        *                                                 *"
-echo "        *    Your box will now be placed in sleep mode    *"
-echo "        *           to transfer the files over            *"
+echo "        *    YOUR BOX WILL NOW BW PLACED IN SLEEP MODE    *"
+echo "        *           TO TRANSFER THE FILES OVER            *"
 echo "        *                                                 *"
 echo "        *                                                 *"
 echo "        ***************************************************"
 echo ""
-sleep 6
+sleep 10
 init 4
 echo ""
 echo "          **********************************************"
@@ -63,7 +63,7 @@ echo "        ******************************************************************
 sleep 8
 fi
 
-opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.3_all.ipk
+opkg install --force-reinstall https://github.com/jenseneverest/regionals/raw/master/crossepg-virgin-alias-mod_5.0.4_all.ipk
 clear
 echo ""
 echo ""
@@ -82,9 +82,6 @@ sleep 10
 
 VIRGIN='/usr/crossepg/scripts/virgin'
 PROVIDER='/usr/crossepg/providers'
-CLEAN='https://github.com/jenseneverest/regionals/raw/master/clean.sh'
-BASE='https://github.com/jenseneverest/regionals/raw/master/base.zip'
-NUMBER='/usr/lib/enigma2/python/Plugins/SystemPlugins/CrossEPG'
 
 ANGLIA='https://github.com/jenseneverest/regionals/raw/master/anglia.zip'
 BORDER='https://github.com/jenseneverest/regionals/raw/master/border.zip'
@@ -135,7 +132,7 @@ read choice
 
 case "$choice" in
 
-  1 ) wget $ANGLIA && unzip anglia.zip && sleep 3 && cd anglia && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+  1 ) wget --no-check-certificate $ANGLIA && unzip anglia.zip && sleep 3 && cd anglia && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -160,7 +157,7 @@ init 4 && reboot ;;
 
 
 
-  2 ) wget $BORDER && unzip border.zip && sleep 3 && cd border && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+  2 ) wget --no-check-certificate $BORDER && unzip border.zip && sleep 3 && cd border && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -184,7 +181,7 @@ sleep 10
 init 4 && reboot ;;
 
 
-  3 ) wget $CENTRAL && unzip central.zip && sleep 3 && cd central && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+  3 ) wget --no-check-certificate $CENTRAL && unzip central.zip && sleep 3 && cd central && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -207,7 +204,7 @@ echo "        ******************************************************************
 sleep 10
 init 4 && reboot ;;
 
- 4 ) wget $GRANADA && unzip granada.zip && sleep 3 && cd granada && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 4 ) wget --no-check-certificate $GRANADA && unzip granada.zip && sleep 3 && cd granada && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -230,7 +227,7 @@ echo "        ******************************************************************
 sleep 10
 init 4 && reboot ;;
 
- 5 ) wget $MERIDIAN && unzip meridian.zip && sleep 3 && cd meridian && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 5 ) wget --no-check-certificate $MERIDIAN && unzip meridian.zip && sleep 3 && cd meridian && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -254,7 +251,7 @@ sleep 10
 init 4 && reboot ;;
 
 
- 6 ) wget $LONDON && unzip london.zip && sleep 3 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 6 ) wget --no-check-certificate $LONDON && unzip london.zip && sleep 3 && cd london && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -278,7 +275,7 @@ sleep 10
 init 4 && reboot ;;
 
 
- 7 ) wget $TYNE && unzip tyne.zip && sleep 3 && cd tyne && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 7 ) wget --no-check-certificate $TYNE && unzip tyne.zip && sleep 3 && cd tyne && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -301,7 +298,7 @@ echo "        ******************************************************************
 sleep 10
 init 4 && reboot ;;
 
- 8 ) wget $WALES && unzip wales.zip && sleep 3 && cd wales && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 8 ) wget --no-check-certificate $WALES && unzip wales.zip && sleep 3 && cd wales && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -324,7 +321,7 @@ echo "        ******************************************************************
 sleep 10
 init 4 && reboot ;;
 
- 9 ) wget $WESTCOUNTRYSW && unzip westcountrysw.zip && sleep 3 && cd westcountrysw && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 9 ) wget --no-check-certificate $WESTCOUNTRYSW && unzip westcountrysw.zip && sleep 3 && cd westcountrysw && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -348,7 +345,7 @@ sleep 10
 init 4 && reboot ;;
 
 
- 10 ) wget $WESTCOUNTRYWEST && unzip westcountrywest.zip && sleep 3 && cd westcountrywest && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 10 ) wget --no-check-certificate $WESTCOUNTRYWEST && unzip westcountrywest.zip && sleep 3 && cd westcountrywest && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -371,7 +368,7 @@ echo "        ******************************************************************
 sleep 10
 init 4 && reboot ;;
 
- 11 ) wget $YORKSHIRE && unzip yorkshire.zip && sleep 3 && cd yorkshire && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
+ 11 ) wget --no-check-certificate $YORKSHIRE && unzip yorkshire.zip && sleep 3 && cd yorkshire && cp -f update.py /$VIRGIN && cp -f update_script.conf /$PROVIDER &&
 chmod 755 update.py && ./update.py &&
 clear
 echo ""
@@ -397,7 +394,7 @@ init 4 && reboot ;;
 
 
  19 )clear
-wget -q https://github.com/jenseneverest/alias/raw/master/alias.conf -O /usr/crossepg/scripts/virgin/alias.conf
+wget --no-check-certificate -q https://github.com/jenseneverest/alias/raw/master/alias.conf -O /usr/crossepg/scripts/virgin/alias.conf
 echo ""
 echo ""
 echo "          ******************************************************************"
